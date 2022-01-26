@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    transition: 0.3s;
 }
 
 :root {
@@ -40,6 +41,10 @@ h1 {
     background: url(./assets/icons/logoS13.svg) no-repeat;
 }
 
+.logo__image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
 
 .header,
 .footer {
@@ -71,6 +76,12 @@ h1 {
     border-right: 1px white solid;
 }
 
+.header__icon-wrapper:hover {
+    opacity: 0.5;
+    background-color: #9080c7;
+    cursor: pointer;
+}
+
 .news-switch__image {
     height: var(--icon-size-small);
     width: var(--icon-size-small);
@@ -88,6 +99,10 @@ h1 {
 
 .header__menu a {
     color: white;
+}
+
+.header__menu a:hover {
+    opacity: 0.7;
 }
 
 .login-field__image {
@@ -123,11 +138,22 @@ h1 {
     height: 200px;
     column-gap: 1rem;
 }
+
+.main-news__image-block {
+    position: relative;
+}
+
+.main-news__counter {
+    position: absolute;
+}
+
 .main-news__image-block img {
     width: 200px;
     height: auto;
 }
-.news-post {
+.news-post:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 .news-post__views-counter {
     display: inline-block;
@@ -146,10 +172,11 @@ h1 {
 
 /* ADDITIONAL BLOCK */
 
-.additional-block {
+.news__additional-block {
     width: 40%;
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;;
 }
 .additional-news__post {
     display: grid;
