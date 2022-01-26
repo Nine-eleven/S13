@@ -1,2 +1,130 @@
 @import url(./reset.css);
 
+/* main slyles */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --icon-size-medium: 50px;
+    --icon-size-small: 30px;
+    --header-height-size: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    visibility: hidden;
+    position: absolute;
+}
+
+.logo {
+    width: 75px;
+    height: 100%;
+    background: #e81d55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo__image {
+    height: var(--icon-size-medium);
+    width: var(--icon-size-medium);
+    background: url(./assets/icons/logoS13.svg) no-repeat;
+}
+
+/* HEADER */
+
+.header {
+    height: var(--header-height-size);
+    background: #3b3358;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header__title {
+    width: 150px;
+    font-family: "helvetica-black",Arial,Helvetica,sans-serif;
+    padding: 10px;
+    text-align: left;
+}
+
+.header__icon-wrapper {
+    width: var(--header-height-size);
+    height: var(--header-height-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-switch__image {
+    height: var(--icon-size-small);
+    width: var(--icon-size-small);
+    background: url(./assets/icons/view-list.svg) no-repeat;
+}
+.header__menu {
+    height: 100%;
+    color: white;
+    display: flex;
+    width: calc(100% - 75px - 150px - 120px);
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header__menu a {
+    color: white;
+}
+
+.login-field__image {
+    height: var(--icon-size-small);
+    width: var(--icon-size-small);
+    background: url(./assets/icons/login.svg) no-repeat;
+}
+
+.search-field__image {
+    height: var(--icon-size-small);
+    width: var(--icon-size-small);
+    background: url(./assets/icons/search.svg) no-repeat;
+}
+
+/* MAIN BLOCK */
+
+.news {
+}
+.news__main-block {
+}
+.main-news {
+}
+.main-news__post {
+}
+.news-post {
+}
+.news-post__views-counter {
+}
+.news-post__post-title {
+}
+.news-post__post-description {
+}
+.additional-block {
+}
+.additional-news__post {
+}
+.footer {
+}
+.footer__title {
+}
+.footer__social-media-menu {
+}
+.footer__mail-ru {
+}
+.footer__counter {
+}
