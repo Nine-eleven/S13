@@ -40,15 +40,18 @@ h1 {
     background: url(./assets/icons/logoS13.svg) no-repeat;
 }
 
-/* HEADER */
 
-.header {
+.header,
+.footer {
     height: var(--header-height-size);
     background: #3b3358;
     display: flex;
     align-items: center;
     color: white;
 }
+
+
+/* HEADER */
 
 .header__title {
     width: 150px;
@@ -118,13 +121,46 @@ h1 {
 }
 .additional-news__post {
 }
-.footer {
-}
+
+/* FOOTER */
+
 .footer__title {
+    width: 40%;
+    font-size: 0.7rem;
+    padding: 10px;
 }
+
+.footer__title > span:first-child {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.footer__title > span:nth-child(2) {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.footer__title > span:nth-child(3) {
+    opacity: 0.5;
+}
+
 .footer__social-media-menu {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
 }
+
+.social-media-menu__item div {
+    height: var(--icon-size-small);
+    width: var(--icon-size-small);
+    background: url(./assets/icons/vk.svg) no-repeat;
+}
+
 .footer__mail-ru {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer__counter {
 }
