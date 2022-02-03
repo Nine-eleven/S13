@@ -2,9 +2,7 @@ export class MainNewsItem {
 
     constructor(newsData) {
         this.updateCounter = this.updateCounter.bind(this);
-        this.id = newsData.id;
-        this.title = newsData.title;
-        this.description = newsData.description;
+        ({id: this.id, title: this.title, description: this.description} = newsData);
         this.count = 0;
         this.createCounter();
         this.createElement();
